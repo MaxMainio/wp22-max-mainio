@@ -20,7 +20,7 @@ body{
 }
 
 .content{
-    width: calc(50vw - 2rem);
+    width: calc(66vw - 4rem);
     position: fixed;
     bottom: 2rem;
     left: 2rem;
