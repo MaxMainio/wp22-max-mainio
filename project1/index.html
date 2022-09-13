@@ -1,15 +1,326 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WP22 | Max Mainio Beidler | Project 1</title>
+		<link rel="ICON" href="Assets/wikipedia.ico" type="image/ico" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"> </link>
+	</head>
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Web Programming | STUDENT NAME | Project 1</title>
-</head>
+	<body>
+		<header>
+			<div id="header">
+				<div id="icon">
+					<img src="assets/enwiki Small.png" alt="Wikipedia logo" id="wiki-logo">
+				</div>
+	
+				<div id="left-tabs">
+					<a class="tab selected">
+						Article
+					</a>
+		
+					<a class="tab">
+						Talk
+					</a>
+				</div>
+	
+				<div id="right-tabs">
+					<a class="tab selected">
+						read
+					</a>
+		
+					<a class="tab">
+						Edit
+					</a>
+		
+					<a class="tab">
+						View History
+					</a>
+				</div>
+	
+				<div id="search">
+					<input placeholder="Search" type="search" id="site-search" name="q">
+				</div>
+			</div>
 
-<body>
+			<div id="gradient"></div>
+		</header>
 
-	<!-- Put your code here! -->
+		<div id="menu">
+			<ul class="simplified">
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Main_Page">Main page</a>
+				</li>
 
-</body>
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Wikipedia:Contents">Contents</a>
+				</li>
 
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Portal:Current_events">Current events</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Special:Random">Random article</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a>
+				</li>
+
+				<li>
+					<a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&utm_medium=sidebar&utm_campaign=C13_en.wikipedia.org&uselang=en">Donate</a>
+				</li>
+			</ul>
+
+			<ul class="simplified">
+				<li>
+					<h4>Contribute</h4>
+					<hr>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Help:Contents">Help</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Help:Introduction">Learn to edit</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal">Community portal</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Special:RecentChanges">Recent changes</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard">Upload file</a>
+				</li>
+			</ul>
+
+			<ul class="simplified">
+				<li>
+					<h4>Tools</h4>
+					<hr></hr>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Blobject">What links here</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Blobject">Related changes</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/wiki/Special:SpecialPages">Special pages</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/w/index.php?title=Blobject&oldid=1109706196">Permanent link</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/w/index.php?title=Blobject&action=info">Page information</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Blobject&id=1109706196&wpFormIdentifier=titleform">Cite this page</a>
+				</li>
+
+				<li>
+					<a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4927065">Wikidata item</a>
+				</li>
+			</ul>
+
+			<ul class="simplified">
+				<li>
+					<h4>Print / export</h4>
+					<hr></hr>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=Blobject&action=show-download-screen">Download as PDF</a>
+				</li>
+
+				<li>
+					<a href="https://en.wikipedia.org/w/index.php?title=Blobject&printable=yes">Printable version</a>
+				</li>
+			</ul>
+
+			<ul class="simplified">
+				<li>
+					<h4>Languages</h4>
+					<hr></hr>
+				</li>
+
+				<li>
+					<a href="https://uz.wikipedia.org/wiki/Blobject">Oʻzbekcha/ўзбекча</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="main">
+			<section>
+				<div>
+					<h1>Blobject</h1>
+					<hr class="large">
+					<h3>From Wikipedia, the free encyclopedia</h3>
+				</div>
+				
+				<div id="body-columnator">
+					<div id="text-column">
+						<p>
+							A <strong>blobject</strong> is a design product, often a brightly-coloured household object which has smooth curves and no sharp edges. The word is a <a href="https://en.wikipedia.org/wiki/Portmanteau">portmanteau</a> of "blob" and "object."
+						</p>
+
+						<ol>
+							<p class="table-title">Contents</p>
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Blobject#Etymology">Etymology</a>
+							</li>
+
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Blobject#Overview">Overview</a>
+							</li>
+
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Blobject#See_also">See also</a>
+							</li>
+
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Blobject#References">References</a>
+							</li>
+
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Blobject#Further_reading">Further reading</a>
+							</li>
+
+							<li>
+								<a href="https://en.wikipedia.org/wiki/Blobject#External_links">External links</a>
+							</li>
+						</ol>
+
+						<h2>Etymology</h2>
+						<hr class="large">
+						<p>
+							The origin of the term is disputed, but it is often attributed to either the designer-author Steven Skov Holt<sup><a>[1]</a></sup> or the designer <a>Karim Rashid</a>. Author and design journalist Phil Patton<sup><a>[2]</a></sup> attributed the word to Holt in 1993 in <a><i>Esquire</i> magazine</a>. Holt has defined a blobject as, most often, a colorful, <a>mass-produced, plastic</a>-based, emotionally engaging <a>consumer product</a> with a curvilinear, flowing shape. This fluid and curvaceous form is the blobject's most distinctive feature. Rashid, the contemporary designer who wrote the book <i>I Want to Change the World</i>, was an early leader in creating blobjects and has become one of the most celebrated designers of his generation.
+						</p>
+
+						<h2>Overview</h2>
+						<hr class="large">
+						<p>
+							Blobjects can also be found in most areas of contemporary <a>visual culture</a>.<sup><a>[3]</a></sup> A blobject can be a typographic font (cf. <a>Neville Brody</a>), an animation (cf. Monica Peon), a piece of furniture (<a>Marc Newson</a>), an article of clothing (<a>Rei Kawakubo</a>), a motorcycle (GK Dynamics), a car (GEMCAR), a building (<a>Future Systems</a>), a painting (<a>Rex Ray</a>), a piece of sculpture (Hadeki Matsumoto), or ceramics work (Ken Price). Blobjects can be made of any material in any size or scale for the home, office, car, or outdoors.<sup>[<a>citation needed</a>]</sup> Common materials used in fabricating blobjects are plastic (especially <a>polycarbonate</a>, <a>polypropylene</a>, or <a>polyethylene</a>), <a>metal</a>, and <a>rubber</a>, with the aim being to give a more organic and animate feel.<sup>[<a>citation needed</a>]</sup>
+						</p>
+
+						<p>
+							The blobject trend has largely been driven by advances in computer-aided design, information visualization, rapid prototyping, materials, and injection molding.[citation needed] These technologies have given designers the chance to use new shapes and to explore transparency and translucency without significant extra production costs.[citation needed]
+						</p>
+
+						<p>
+							More recently, in 2004, author Bruce Sterling used the word in the title of his keynote speech at Siggraph.[4] In his speech titled, "When Blobjects Rule the Earth", Sterling speculated on the future of graphic simulation when practical differences no longer exist between computer generated models and physically manufactured objects.
+						</p>
+
+						<h2>See also</h2>
+						<hr class="large">
+						<ul>
+							<li>
+								<a>Blobitechture</a>
+							</li>
+
+							<li>
+								<a>Greg Lynn</a>
+							</li>
+						</ul>
+
+						<h2>References</h2>
+						<hr class="large">
+						<ol>
+							<li>
+								<p class="list-p">"CA College of the Arts Bio on Steven Skov Holt". Archived from the original on 2009-05-18. Retrieved 2009-07-08.</p>
+							</li>
+
+							<li>
+								<p class="list-p">Random House Bio of Phil Patton</p>
+							</li>
+
+							<li>
+								<p class="list-p">Brooke, Eliza (21 December 2018). "The rise of the blob (in home decor)". Vox. Retrieved 3 August 2022.</p>
+							</li>
+
+							<li>
+								<p class="list-p">Siggraph 2004</p>
+							</li>
+						</ol>
+
+						<h2>Further reading</h2>
+						<hr class="large">
+						<ul>
+							<li>
+								<p class="list-p">Sterling, Bruce, (2002). Tomorrow Now: Envisioning the Next Fifty Years, Random House, ISBN 978-0-679-46322-1</p>
+							</li>
+
+							<li>
+								<p class="list-p">Skov Holt, Steven; Holt Skov, Mara, (2005). Blobjects & Beyond: The New Fluidity in Design, Chronicle Books, ISBN 978-0-8118-4765-0</p>
+							</li>
+
+							<li>
+								<p class="list-p">Rashid, Karim, (2001). I Want to Change the World, Universe Publishing, ISBN 978-0-7893-0531-2</p>
+							</li>
+						</ul>
+
+						<h2>External links</h2>
+						<hr class="large">
+						<ul>
+							<li>
+								<a>Boing Boing: When Blobjects Rule the Earth by Bruce Sterling</a>
+							</li>
+
+							<li>
+								<a>Karim Rashid</a>
+							</li>
+
+							<li>
+								<a>San Jose Museum of Art</a>
+							</li>
+
+							<li>
+								<a>Industrial design</a>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="img-div">
+							<img src="assets/IMac_Bondi_Blue.jpg.webp" alt="Image of the Apple iMac G3" class="imac-img">
+							<p class="context">Apple <a href="https://en.wikipedia.org/wiki/IMac">iMac G3</a></p>
+						</div>
+	
+						<div class="img-div">
+							<img src="assets/220px-Volkswagen-NewBeetle.jpg" alt="Image of a Volkswagen New Beetle" class="imac-img">
+							<p class="context"><a href="https://en.wikipedia.org/wiki/Volkswagen_New_Beetle">Volkswagen New Beetle</a></p>
+						</div>
+
+						<div class="img-div">
+							<img src="assets/220px-Blob_Birmingham.jpg" alt="Image of the Selfridges building in Bermingham" class="imac-img">
+							<p class="context">The <a>Selfridges</a> building ("The Blob") in <a>Birmingham</a> by architect Jan Kaplicky of <a>Future Systems</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<p class="small-p">This page was last edited on 13 September 2022, at 15:35 (UTC).</p>
+				<p class="small-p">
+					Text is available under the Creative Commons Attribution-ShareAlike License 3.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+				</p>
+			</footer>
+		</div>
+	</body>
 </html>

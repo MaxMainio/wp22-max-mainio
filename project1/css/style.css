@@ -1,55 +1,259 @@
 /* Variables */
 
 :root{
-    --almost-red: #d82f1f;
     --type: #333;
+    --green: #00ff00;
 }
+
+
 
 /* Body */
 
-*{
+body{
+    margin: 0;
+
+    font-family: proxima-nova, sans-serif;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+
+
+/* Header */
+
+#header{
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+
+    background-color: var(--type);
+}
+
+#icon{
+    width: calc(200px - 1rem);
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+#wiki-logo{
+    height: 3rem;
+}
+
+#left-tabs{
+    display: flex;
+    padding-top: 1rem;
+    margin-right: auto;
+}
+
+#right-tabs{
+    display: flex;
+    padding-top: 1rem;
+}
+
+#search{
+    display: flex;
+    align-items: center;
+}
+
+#gradient{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 4rem;
+    margin-left: 200px;
+
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(0,255,0,1) 100%);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.selected{
+    color: var(--type);
+    background-color: var(--green);
+}
+
+.selected:hover{
+    color: var(--type);
+}
+
+.tab{
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+
+/* Menu */
+
+#menu{
+    width: calc(200px - 1rem);
+    height: 100vh;
+    position: fixed;
+    padding-left: 1rem;
+
+    background-color: var(--type);
+}
+
+hr{
+    margin: 0 1rem 0.5rem 0;
+}
+
+
+
+/* Main */
+
+#main{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 4rem;
+    margin-left: 200px;
+
+    min-height: calc(100vh - 4rem);
+}
+
+section{
+    padding: 0.5rem;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    padding: 0.5rem;
+
+    background-color: var(--green);
+}
+
+.large{
+    border: 1px solid;
+    color: var(--green);
+    margin-right: 0;
+}
+
+.table-title{
+    font-weight: bold;
+    margin: 0 0 0.25rem -1rem;
+}
+
+.list-p{
     margin: 0;
 }
 
-html{
-    font-size: 62.5%; /* 10px */
+
+
+
+/* Main Column */
+
+#body-columnator{
+    display: flex;
 }
 
-body{
-    margin: 2rem;
+#text-column{
+    padding-right: 0.5rem;
 }
+
+
 
 /* Type */
 
 h1{
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: normal;
 
     color: var(--type);
+
+    margin: 0 0 0.25rem 0;
 }
 
 h2{
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: normal;
 
     color: var(--type);
+
+    margin: 1rem 0 0.25rem 0;
+}
+
+h3{
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-style: italic;
+
+    color: var(--type);
+
+    margin:-0.2rem 0 1rem 0;
+}
+
+h4{
+    font-weight: bold;
+
+    color: white;
+
+    margin-bottom: 0.25rem;
+    padding: 0;
+}
+
+p{
+    line-height: 1.2rem;
+
+    color: var(--type);
+    margin: 0 0 1rem 0;
+}
+
+.small-p{
+    font-size: 0.8rem;
 }
 
 a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 1.5rem;
-    
-    color: var(--almost-red);
+    color: #aaa;
     text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited{
+    color: var(--green);
+}
+
+a:hover{
+    color: var(--type);
+    background-color: var(--green);
+}
+
+ol{
+    margin: 0 0 0 1rem;
+    padding: 0;
 }
 
 ul{
-    list-style-type: none;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0 0 0 1rem;
+}
+
+.simplified{
+    margin: 0.5rem 0 1rem 0;
     padding: 0;
+    list-style-type: none;
+}
+
+
+
+/* IMGs */
+
+.img-div{
+    margin: 0 0 0.5rem 0;
+    background-color: var(--type);
+}
+
+.imac-img{
+    margin: 0.25rem 0 0 0;
+    padding: 0 0.25rem 0 0.25rem;
+}
+
+.context{
+    margin: 0 0.25rem 0 0.25rem;
+    padding: 0.25rem 0 0.5rem 0;
+    color: white;
 }
