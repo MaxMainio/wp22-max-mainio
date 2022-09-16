@@ -54,6 +54,7 @@ body{
 }
 
 #search{
+    margin-right: 1rem;
     display: flex;
     align-items: center;
 }
