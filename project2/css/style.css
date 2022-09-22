@@ -1,7 +1,7 @@
 /* Variables */
 
 :root{
-    --type: #333;
+    --type: #000;
     --green: #00ff00;
 }
 
@@ -16,16 +16,114 @@ html{
     font-size: 62.5%; /* 10px */
 }
 
-body{
-    margin: 2rem;
+#main{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+
+/* Images */
+
+#frame{
+    overflow: visible;
+
+    width: 200px;
+    height: 1rem;
+    margin-left: 25px;
+}
+
+#image{
+    object-fit: fill;
+    width: 200px;
+}
+
+
+
+
+
+
+#site_search{
+    height: 2rem;
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+.l_spacer{
+    margin-left: 145px;
+}
+
+
 
 /* Type */
 
 h1{
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 3rem;
 
+    margin: 0 500px 0 0;
+
     color: var(--type);
+}
+
+h2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2rem;
+
+    margin: 0 500px 0 0;
+
+    color: var(--type);
+}
+
+h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+
+    margin: 0 500px 2rem 0;
+
+    color: var(--type);
+}
+
+p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+
+    color: var(--type);
+}
+
+a{
+    font-size: 1.5rem;
+
+    color: #0000ee;
+    cursor: pointer;
+}
+
+.menu_a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+
+    color: #0000ee;
+
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.tab_a{
+    font-size: 1.5rem;
+    margin: 3rem 1rem 0 0;
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+.tab_a_l_spacer{
+    font-size: 1.5rem;
+    margin: 3rem 1rem 0 145px;
+    white-space: nowrap;
+
+    cursor: pointer;
 }
