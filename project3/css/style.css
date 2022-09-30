@@ -2,7 +2,8 @@
 
 :root{
     --type: #000;
-    --green: #00ff00;
+    --orange: #ff7b00;
+    --blue: #38AEE6;
 }
 
 /* Body */
@@ -18,7 +19,154 @@
 
 body{
     margin: 0;
+    display: flex;
+
+    font-family: proxima-nova, sans-serif;
 }
+
+
+/* Main */
+
+.side-menu{
+    position: fixed;
+
+    width: 220px;
+    height: 100%;
+
+    padding: 1rem 1rem 0 1rem;
+
+    /* background-color: #999; */
+}
+
+.main-div{
+    height: 100%;
+    width: 1000px;
+
+    margin-left: calc(50vw - 500px);
+    /* background-color: red; */
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+.img-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+    .main-div{
+        margin-left: 220px;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .main-div{
+        width: auto;
+        padding-right: 1rem;
+    }
+}
+
+
+
+
 
 /* Type */
 
+h1{
+    font-size: 8rem;
+    line-height: 6rem;
+    text-indent: 25%;
+    text-transform: uppercase;
+
+    margin: 1.1rem 0 calc(40vh - 7.1rem) 0;
+}
+
+.super-header{
+    line-height: 8rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+
+    color: var(--blue);
+}
+
+.super-sub-header{
+    font-size: 6rem;
+
+    margin-top: 0;
+    margin-bottom: calc(40vh - 22.25rem);
+}
+
+
+
+
+
+h2{
+    font-size: 1.2rem;
+}
+
+h3{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h6{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.active{
+    color: var(--orange);
+    display: inline;
+}
+
+
+
+
+
+a{
+    font-size: 1rem;
+    color: var(--type);
+    text-decoration: none;
+
+    margin-right: 0.5rem;
+}
+
+a:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.home-links{
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: lighter;
+
+    display: block;
+}
+
+
+
+
+
+p{
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+    text-indent: 25%;
+}
+
+.quotes{
+    font-weight: lighter;
+    text-indent: 0;
+
+    margin-left: 25%;
+}
