@@ -79,6 +79,10 @@ img{
     margin-top: 0.5rem;
 }
 
+.grid-gap{
+    gap: 1rem;
+}
+
 
 
 
@@ -189,5 +193,9 @@ p{
     font-weight: lighter;
     text-indent: 0;
 
-    margin-left: 25%;
+    margin: 2.4rem 0 2.4rem 25%;
+}
+
+.line-skip{
+    margin-top: 2.4rem;
 }
